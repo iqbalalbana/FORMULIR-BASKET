@@ -107,6 +107,36 @@
             android:layout_height="wrap_content"
             android:entries="@array/kota" />
 
+        <TextView
+            android:id="@+id/textViewPosisi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Posisi yang anda inginkan" />
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Play Maker" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Point Guard" />
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shooter" />
+
+        <CheckBox
+            android:id="@+id/checkBox4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Center" />
+
         <Button
         android:id="@+id/buttonOk"
         style="@style/Base.TextAppearance.AppCompat.Title"

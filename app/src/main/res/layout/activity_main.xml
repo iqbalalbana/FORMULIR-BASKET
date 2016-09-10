@@ -52,8 +52,25 @@
         android:text="Jenis Kelamin" />
 
     <RadioGroup
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"></RadioGroup>
+        android:id="@+id/radioGroupJk"
+        android:layout_width="338dp"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioButtonLk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Laki-Laki" />
+
+        <RadioButton
+            android:id="@+id/radioButtonPr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Perempuan" />
+    </RadioGroup>
+
 
     <Button
         android:id="@+id/buttonOk"

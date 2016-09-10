@@ -5,12 +5,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 
 
 public class MainActivity extends AppCompatActivity {
     EditText etNama;
     EditText etTahun;
+    RadioGroup rgJk;
     Button bOk;
     TextView tvHasil;
 
@@ -21,52 +24,46 @@ public class MainActivity extends AppCompatActivity {
 
         etNama = (EditText) findViewById(R.id.editTextNama);
         etTahun = (EditText) findViewById(R.id.editTextTanggal);
+        rgJk = (RadioGroup) findViewById(R.id.radioGroupJk);
         bOk = (Button) findViewById(R.id.buttonOk);
         tvHasil = (TextView) findViewById(R.id.textViewHasil);
 
         bOk.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                doProcess();
+            public void onClick(View v) {
+                doClick();
             }
         });
     }
 
-    private void doProcess() {
-        if (isvalid()) {
-            String nama = etNama.getText().toString();
-            int tahun = Integer.parseInt(etTahun.getText().toString());
-            tvHasil.setText("**************** ( TSBC ) ****************" +
-                    "\nNama         : " + nama + " \nUmur         : " + tahun);
-        }
-    }
-
-    private boolean isvalid() {
-        boolean valid = true;
-
+    private void doClick() {
         String nama = etNama.getText().toString();
         String tahun = etTahun.getText().toString();
+        String hasil = null;
+
+        if (rgJk.getCheckedRadioButtonId() != -1) {
+            RadioButton rb = (RadioButton)
+                    findViewById(rgJk.getCheckedRadioButtonId());
+            hasil = rb.getText().toString();
+        }
 
         if (nama.isEmpty()) {
             etNama.setError("Nama Belum Diisi");
-            valid = false;
         } else if (nama.length() < 3) {
             etNama.setError("Nama Minimal 3 Karakter");
-            valid = false;
         } else {
             etNama.setError(null);
         }
 
         if (tahun.isEmpty()) {
             etTahun.setError("Tahun Belum Diisi");
-            valid = false;
         } else if (tahun.length() > 2) {
             etTahun.setError("Format Umur Salah");
-            valid = false;
         } else {
             etNama.setError(null);
         }
-
-        return valid;
+        tvHasil.setText("**************** ( TSBC ) ****************" + "\nNama         : " + nama + " \nUmur         : " + tahun +
+                "\nJenis Kelamin     : " + hasil);
+        }
     }
-}
+

@@ -7,6 +7,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 
@@ -14,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     EditText etNama;
     EditText etTahun;
     RadioGroup rgJk;
+    Spinner spKota;
     Button bOk;
     TextView tvHasil;
 
@@ -25,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         etNama = (EditText) findViewById(R.id.editTextNama);
         etTahun = (EditText) findViewById(R.id.editTextTanggal);
         rgJk = (RadioGroup) findViewById(R.id.radioGroupJk);
+        spKota = (Spinner) findViewById(R.id.spinnerKota);
         bOk = (Button) findViewById(R.id.buttonOk);
         tvHasil = (TextView) findViewById(R.id.textViewHasil);
 
@@ -40,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
         String nama = etNama.getText().toString();
         String tahun = etTahun.getText().toString();
         String hasil = null;
+        String asal = spKota.getSelectedItem().toString();
 
         if (rgJk.getCheckedRadioButtonId() != -1) {
             RadioButton rb = (RadioButton)
@@ -63,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
             etNama.setError(null);
         }
         tvHasil.setText("**************** ( TSBC ) ****************" + "\nNama         : " + nama + " \nUmur         : " + tahun +
-                "\nJenis Kelamin     : " + hasil);
+                "\nJenis Kelamin     : " + hasil + "\nAsal Kota       : " + asal);
         }
     }
 

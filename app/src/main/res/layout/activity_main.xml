@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -11,7 +17,23 @@
     android:weightSum="1"
     tools:context="id.sch.smktelkom_mlg.tugas01.xirpl1021.formulirbasket.MainActivity">
 
-    <ImageView
+        <TextView
+            android:id="@+id/textView"
+            style="@style/Base.TextAppearance.AppCompat.Headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="FORMULIR PENDAFTARAN" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/Base.TextAppearance.AppCompat.Subhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="T . S . B . C" />
+
+        <ImageView
         android:id="@+id/imageView"
         android:layout_width="75dp"
         android:layout_height="75dp"
@@ -57,22 +79,35 @@
         android:layout_height="wrap_content">
 
         <RadioButton
+            android:id="@+id/radioButtonPr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Perempuan" />
+
+        <RadioButton
             android:id="@+id/radioButtonLk"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="false"
             android:text="Laki-Laki" />
 
-        <RadioButton
-            android:id="@+id/radioButtonPr"
+        <TextView
+            android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:checked="false"
-            android:text="Perempuan" />
+            android:text="Asal Kota" />
+
     </RadioGroup>
 
 
-    <Button
+        <Spinner
+            android:id="@+id/spinnerKota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/kota" />
+
+        <Button
         android:id="@+id/buttonOk"
         style="@style/Base.TextAppearance.AppCompat.Title"
         android:layout_width="wrap_content"
@@ -90,6 +125,7 @@
         android:layout_marginTop="8dp"
         android:gravity="center_horizontal"
         android:padding="16dp"
-        android:text="Hasil" />
+        tools:text="Hasil" />
 
 </LinearLayout>
+</ScrollView>

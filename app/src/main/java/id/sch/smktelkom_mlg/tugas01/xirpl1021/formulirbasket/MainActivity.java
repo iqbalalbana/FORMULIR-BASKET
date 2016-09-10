@@ -70,4 +70,3 @@ public class MainActivity extends AppCompatActivity {
                 "\nJenis Kelamin     : " + hasil + "\nAsal Kota       : " + asal);
         }
     }
-

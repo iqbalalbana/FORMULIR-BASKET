@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
         String nama = etNama.getText().toString();
         String umur = etTahun.getText().toString();
         String Jenis = null;
-        String Posisi = "Posisi            : ";
+        String Posisi = "Posisi                      : ";
         int startlen = Posisi.length();
 
         if (nama.isEmpty()) {

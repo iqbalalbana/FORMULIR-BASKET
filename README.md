@@ -22,19 +22,12 @@ DETEKSI KESALAHAN :
 <br>
 
 ### B. (LINK DOWNLOAD)
-<p> http://www.mediafire.com/download/d1vhhq0405f9yic/app-debug.apk </p>
+<p> http://www.mediafire.com/download/b3yma3fp2awi34m/app-debug.apk </p>
 
 <p>Screenshoot    : </p>
-<p> https://postimg.org/image/5ht862r57/ </p>
-<p> https://postimg.org/image/cmb1f3yej/ </p>
-<p> https://postimg.org/image/57lpmqciz/ </p>
-<p> https://postimg.org/image/5ln1mbwmj/ </p>
-<p> https://postimg.org/image/puaf81vxn/ </p>
-<p> https://postimg.org/image/7g4hht90r/ </p>
-<p> https://postimg.org/image/qmhokzpij/ </p>
-<p> https://postimg.org/image/a004bwwkr/ </p>
-<p> https://postimg.org/image/uy6a9zwff/ </p>
-
+![foto 1] (https://s25.postimg.org/rne8z4ezz/Screenshot_2016_09_15_12_29_11.png)
+![foto 2] (https://s25.postimg.org/qz5eg6ga7/Screenshot_2016_09_15_12_29_16.png)
+![foto 3] (https://s25.postimg.org/s2pis50xb/Screenshot_2016_09_15_12_29_20.png)
 
 <br>
 

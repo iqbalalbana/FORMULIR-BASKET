@@ -16,7 +16,7 @@ Kegunaan  :
 <br> Agar lebih mudah untuk mendaftarkan dirinya melalui jarak jauh (online)
 
 DETEKSI KESALAHAN :
-- Input Nama  (Tidak diisi, minimal 3 karakter)
+- Input Nama  (Tidak diisi, minimal 4 karakter)
 - Input Tanggal   (Tidak diisi, Format umur salah)
 
 <br>
